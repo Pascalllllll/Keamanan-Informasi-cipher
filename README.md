@@ -28,11 +28,15 @@ Ciphertext ditampilkan dalam format hex.
 1. Isi `IP_RECEIVER` di `sender.py` dengan IP mesin receiver (`127.0.0.1` kalau di mesin yang sama).
 2. Jalankan receiver:
    ```bash
-   python receiver.py
+   python3 receiver.py
    ```
 3. Di terminal lain, jalankan sender:
    ```bash
-   python sender.py
+   python3 sender.py
    ```
 4. Sender dan receiver bergantian mengirim pesan. stop dengan `Ctrl+C`.
 
+
+## Dokumentasi
+
+![alt text](image.png)

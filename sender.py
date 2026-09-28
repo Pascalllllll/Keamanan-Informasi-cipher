@@ -1,7 +1,7 @@
 import socket
 from cipher import encrypt, decrypt
 
-IP_RECEIVER = ""
+IP_RECEIVER = "127.0.0.1"
 
 client = socket.socket()
 client.connect((IP_RECEIVER, 5000))
