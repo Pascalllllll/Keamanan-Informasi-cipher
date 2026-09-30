@@ -2,7 +2,7 @@ import socket
 from cipher import encrypt, decrypt
 
 server = socket.socket()
-server.bind(("0.0.0.0", 5000))
+server.bind(("0.0.0.0", 5001))
 server.listen(1)
 print("Menunggu sender...")
 conn, addr = server.accept()

@@ -4,7 +4,7 @@ from cipher import encrypt, decrypt
 IP_RECEIVER = "172.17.0.1" ##
 
 client = socket.socket()
-client.connect((IP_RECEIVER, 5000))
+client.connect((IP_RECEIVER, 5001))
 print("Terhubung ke receiver")
 
 while True:

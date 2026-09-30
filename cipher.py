@@ -1,6 +1,6 @@
 # DES - diimplementasikan manual (diadaptasi dari kode DES berbasis string biner)
 
-KEY = "G30SPKI1"
+KEY = "G30SPKI"
 
 KEY_PERMUTATION_TABLE = [
     56, 48, 40, 32, 24, 16, 8,
@@ -163,7 +163,9 @@ def to_bytes(bin_str): # string biner -> bytes
 
 
 def key_bin():
-    return to_bin(KEY.encode())
+    k = KEY.encode()
+    k = (k * 8)[:8]
+    return to_bin(k)
 
 
 def encrypt(plaintext):
